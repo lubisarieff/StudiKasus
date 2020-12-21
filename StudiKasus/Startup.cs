@@ -27,6 +27,8 @@ namespace StudiKasus
 		{
 			services.AddControllersWithViews();
 
+			services.AddDbContext<StudiKasusContext>(options =>
+				options.UseMySql(Configuration["DefaultConnection:ConnectionString"]));
 			//services.AddDbContext<StudiKasusContext>(options =>
 			//options.UseSqlServer(Configuration.GetConnectionString("StudiKasusContext")));
 			//services.AddDbContext<StudiKasusContext>(options => options.UseInMemoryDatabase());
