@@ -14,13 +14,11 @@ If you want to change database configuration, please open appsettings.json,
   }
 }
 ```
-'''
+```
 For migrations
 dotnet ef update database
-'''
-
 build and run
-'''
+
 dotnet build
 dotnet run
-'''
+```
