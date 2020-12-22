@@ -20,9 +20,9 @@ namespace StudiKasus.Controllers
         }
 
         // GET: Users
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pageNumber = 1)
         {
-            return View(await _context.User.ToListAsync());
+            return View(await PaginatedList<User>.PaginationAsync(_context.User, pageNumber, 10));
         }
 
         // GET: Users/Details/5
