@@ -17,8 +17,10 @@ If you want to change database configuration, please open appsettings.json,
 ```
 For migrations
 dotnet ef database update
-build and run
 
+build and run
 dotnet build
 dotnet run
 ```
+
+For migration will take about 3-8 minutes
