@@ -16,7 +16,7 @@ If you want to change database configuration, please open appsettings.json,
 ```
 ```
 For migrations
-dotnet ef update database
+dotnet ef database update
 build and run
 
 dotnet build
